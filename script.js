@@ -114,30 +114,6 @@ var generatedPassword = [];
   generatedPassword.push(characterCode)
   }
   return generatedPassword.join('')
-console.log(generatedPassword)
-
-// var randomNums = [];
-// for(var i=length; i=length; i++) {
-//     randomNums = criteria[Math.random()*(criteria.length-1)];
-//     if(!randomNums.contains(x)){
-//         randomNums.push(x);
-//     }
-// }
-// console.log(randomNums)
-
-// var indexArr = [];
-// while (indexArr.length = length) {
-//   var rndIndex = Math.random()*(criteria.length-1);
-//   if (indexArr.indexOf(rndIndex) == -1)
-//       indexArr.push(rndIndex)
-// }
-// console.log(indexArr)
-
-// criteria[Math.floor(Math.random() * criteria.length, length)]
-// console.log(criteria[Math.floor(Math.random() * criteria.length, length)])
-
-// 4. Display the generated password
-  return "Generated password goes here"
 }
 
 // Write password to the #password input
