@@ -10,23 +10,19 @@ function generatePassword() {
   console.log("Hey")
 // 1. prompt user for password criteria
   //    a. prompt for length of password 8-128 characters
-  var length = prompt ("What length should your password be from 8-128 characters?");
+  var length = prompt ("What length should your password be from 8-128 characters?").toUpperCase();
   console.log(length);
   //    b. prompt if they want lowercase
-  var wouldYouLikeLowercase = prompt ("Would you like lowercase letters? YES/NO");
-  wouldYouLikeLowercase.toUpperCase
+  var wouldYouLikeLowercase = prompt ("Would you like lowercase letters? YES/NO").toUpperCase();
   console.log(wouldYouLikeLowercase)
   //    c. prompt if they want uppercase
-  var wouldYouLikeUppercase = prompt ("Would you like uppercase letters? YES/NO");
-  wouldYouLikeUppercase.toUpperCase
+  var wouldYouLikeUppercase = prompt ("Would you like uppercase letters? YES/NO").toUpperCase();
   console.log(wouldYouLikeUppercase)
   //    d. prompt if they want numbers
-  var wouldYouLikeNumbers = prompt ("Would you like numbers? YES/NO")
-  wouldYouLikeNumbers.toUpperCase
+  var wouldYouLikeNumbers = prompt ("Would you like numbers? YES/NO").toUpperCase();
   console.log(wouldYouLikeNumbers)
   //    e. prompt if they want special characters
-  var wouldYouLikeSpecial = prompt ("Would you like special characters? YES/NO")
-  wouldYouLikeSpecial.toUpperCase
+  var wouldYouLikeSpecial = prompt ("Would you like special characters? YES/NO").toUpperCase();
   console.log(wouldYouLikeSpecial)
 // 2. validate the input
   if (length < 8) {
@@ -41,7 +37,7 @@ function generatePassword() {
   if (wouldYouLikeLowercase === "YES"){
     alert ("You decided to include lowercase letters.")
   } else if (wouldYouLikeLowercase === "NO") {
-    alert ("You decided not to include lowercase letters.")
+    alert ("You decided NOT to include lowercase letters.")
   } else {
     alert ("You did not input a valid response for lowercase letters, please try again.")
     return
@@ -50,7 +46,7 @@ function generatePassword() {
   if (wouldYouLikeUppercase === "YES"){
     alert ("You decided to include uppercase letters.")
   } else if (wouldYouLikeUppercase === "NO") {
-    alert ("You decided not to include uppercase letters.")
+    alert ("You decided NOT to include uppercase letters.")
   } else {
     alert ("You did not input a valid response for uppercase letters, please try again.")
     return
@@ -59,7 +55,7 @@ function generatePassword() {
   if (wouldYouLikeNumbers === "YES"){
     alert ("You decided to include numbers.")
   } else if (wouldYouLikeNumbers === "NO") {
-    alert ("You decided not to include numbers.")
+    alert ("You decided NOT to include numbers.")
   } else {
     alert ("You did not input a valid response for numbers, please try again.")
     return
@@ -68,7 +64,7 @@ function generatePassword() {
   if (wouldYouLikeSpecial === "YES"){
     alert ("You decided to include special characters.")
   } else if (wouldYouLikeSpecial === "NO") {
-    alert ("You decided not to include special characters.")
+    alert ("You decided NOT to include special characters.")
   } else {
     alert ("You did not input a valid response for special characters, please try again.")
     return
@@ -81,7 +77,6 @@ if (wouldYouLikeLowercase === "YES") {
 } else {
   var youLikeLowercase = [];
 }
-console.log(youLikeLowercase)
 
 if (wouldYouLikeUppercase === "YES") {
   var youLikeUppercase = uppercase
